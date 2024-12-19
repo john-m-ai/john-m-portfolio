@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><span><img src="images/JD.png" alt="Logo" /></span
+      ></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <button class="visit-btn">Visit Github</button>
+    </header>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="img-wrapper">
+          <img src="images/Profile.png" alt="Profile Picture" />
+        </div>
+        <div class="info-box">
+          <div class="text">
+            <h3>Hi, I'm</h3>
+            <h1 class="text-anim">John Martin</h1>
+            <span>Frontend Developer</span>
+          </div>
+          <div class="btn-group">
+            <div class="btn">
+              <a href="#open-modal" class="text-modal">Download CV</a>
+            </div>
+            <div class="btn">Contact</div>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-behance"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="open-modal" class="modal-window">
+      <div class="modal-content">
+        <a href="#" title="Close" class="modal-close"
+          ><i class="fa-solid fa-x"></i
+        ></a>
+        <h1>Download CV</h1>
+        <p>This is a simple modal using only HTML and CSS.</p>
+        <!-- Add an iframe to preview the document -->
+        <iframe src="files/test1.pdf" width="100%" height="500px"></iframe>
+        <!-- Add a download link -->
+        <a href="files/test1.pdf" download="Your_CV.pdf">Download CV</a>
+      </div>
+    </div>
+
+    <section id="experience" class="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-info">
+        <div class="grid">
+          <div class="grid-card">
+            <i class="fa-solid fa-code"></i>
+            <span>Frontend Web Developer</span>
+            <h3>3+ Months</h3>
+            <p>
+              Created a Web based social platform for employers and employees
+              for job seeking.
+            </p>
+          </div>
+          <div class="grid-card">
+            <i class="fa-regular fa-file-code"></i>
+            <span>Package App Developer</span>
+            <h3>2+ Months</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, temporibus.
+            </p>
+          </div>
+          <div class="grid-card">
+            <i class="fa-brands fa-figma"></i>
+            <span>Figma Designer</span>
+            <h3>3+ Years</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+              et!
+            </p>
+          </div>
+          <div class="grid-card">
+            <i class="fa-brands fa-react"></i>
+            <span>Frontend Developer React JS</span>
+            <h3>2+ Months</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+              et!
+            </p>
+          </div>
+        </div>
+        <img src="images/Profile.png" alt="Profile Picture" />
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/Test1.png" alt="Project Image" />
+          <h3>Project X</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            quisquam?
+          </p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">Github Repo</div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/Test1.png" alt="Project Image" />
+          <h3>Project X</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            quisquam?
+          </p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">Github Repo</div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/Test1.png" alt="Project Image" />
+          <h3>Project X</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            quisquam?
+          </p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">Github Repo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="input">
+          <input type="text" placeholder="example@email.com" />
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="btn">Submit</div>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">© All Rights Reserved | John Martin Demonteverde</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
